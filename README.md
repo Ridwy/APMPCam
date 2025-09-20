@@ -2,7 +2,7 @@
 
 An iOS/iPadOS camera application that demonstrates recording ultra-wide angle video with embedded Wide FOV APMP (Apple Projected Media Profile) metadata using Video Toolbox APIs.
 
-While iPhone's ultra-wide camera captures approximately 105° field of view (not quite reaching 120°), it provides valuable samples for APMP specification research and development. Recorded videos are automatically saved to the Camera Roll and can be transferred to Vision Pro via AirDrop for spatial video playback.
+While iPhone's ultra-wide camera captures approximately 105° field of view (not quite reaching 120°), it provides valuable samples for APMP specification research and development. Recorded videos are automatically saved to the Camera Roll and can be transferred to Vision Pro via AirDrop for projected playback.
 
 ## Requirements
 
@@ -49,4 +49,4 @@ This app was created for research supporting @Ridwy's talk at iOSDC Japan 2025 a
 
 ## Note
 
-This is a proof-of-concept implementation focused on demonstrating APMP metadata embedding. Audio recording is not included to keep the code simple and focused. Production use may require additional error handling and feature enhancements.
+This is a proof-of-concept implementation focused on demonstrating APMP vexu box embedding. Audio recording is not included to keep the code simple and focused. Production use may require additional error handling and feature enhancements.
