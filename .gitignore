@@ -56,6 +56,9 @@ xcuserdata/
 ehthumbs.db
 Thumbs.db
 
+# Claude Code
+.claude/
+
 ## Obj-C/Swift specific
 *.hmap
 *.ipa
