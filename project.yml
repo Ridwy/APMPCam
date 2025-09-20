@@ -1,0 +1,38 @@
+name: APMPCam
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    iOS: "26.0"
+settings:
+  DEVELOPMENT_TEAM: ""
+  MARKETING_VERSION: "1.0.0"
+  CURRENT_PROJECT_VERSION: "1"
+targets:
+  APMPCam:
+    type: application
+    platform: iOS
+    sources:
+      - Sources
+    settings:
+      base:
+        INFOPLIST_FILE: Sources/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.apmpcam
+        TARGETED_DEVICE_FAMILY: "1,2"
+        SWIFT_VERSION: 6.0
+        IPHONEOS_DEPLOYMENT_TARGET: "26.0"
+      configs:
+        Debug:
+          SWIFT_OPTIMIZATION_LEVEL: "-Onone"
+        Release:
+          SWIFT_OPTIMIZATION_LEVEL: "-O"
+    info:
+      path: Sources/Info.plist
+      properties:
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationLandscapeRight
+        UISupportedInterfaceOrientations~ipad:
+          - UIInterfaceOrientationLandscapeRight
+        NSCameraUsageDescription: "This app needs camera access to record videos"
+        NSPhotoLibraryUsageDescription: "This app needs photo library access to save videos"
+        NSPhotoLibraryAddUsageDescription: "This app needs permission to save videos to your photo library"
